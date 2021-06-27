@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data  class="UserSetUpActivityBinding">
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UserSetUpActivity">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_user_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.15"
+            android:text="Email"
+            android:textSize="16sp"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_user_email"
+            app:layout_constraintTop_toTopOf="@id/tv_user_email"
+            app:layout_constraintStart_toEndOf="@id/tv_user_email"
+            app:layout_constraintBottom_toBottomOf="@id/tv_user_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_user_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_email"
+            app:layout_constraintWidth_percent="0.15"
+            android:text="Name"
+            android:textSize="16sp"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_user_name"
+            app:layout_constraintTop_toTopOf        ="@id/tv_user_name"
+            app:layout_constraintStart_toEndOf      ="@id/tv_user_name"
+            app:layout_constraintBottom_toBottomOf  ="@id/tv_user_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_user_money"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_name"
+            app:layout_constraintWidth_percent="0.15"
+            android:text="Money"
+            android:textSize="16sp"
+            android:layout_margin="16dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_user_money"
+            app:layout_constraintTop_toTopOf        ="@id/tv_user_money"
+            app:layout_constraintStart_toEndOf      ="@id/tv_user_money"
+            app:layout_constraintBottom_toBottomOf  ="@id/tv_user_money"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_user_setup_ok"
+            android:text="확인"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_user_setup_cancel"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_user_setup_cancel"
+            android:text="취소"
+            android:backgroundTint="#aaaaaa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_user_setup_ok"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
