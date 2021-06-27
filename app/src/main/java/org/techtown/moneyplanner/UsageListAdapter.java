@@ -6,20 +6,27 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import org.techtown.moneyplanner.data.Usage;
+
 import java.util.List;
 
-public class PlanAdapter extends BaseAdapter {
+public class UsageListAdapter extends BaseAdapter {
     private Context context;
-    private List<PlanItem> planList;
+    private List<Usage> planList;
 
-    public PlanAdapter(Context context, List<PlanItem> planList){
+    public UsageListAdapter(Context context, List<Usage> planList){
         this.context=context;
         this.planList=planList;
     }
 
+    public void setPlanList(List<Usage> planList) {
+        this.planList = planList;
+    }
 
     @Override
     public int getCount() {
+        if(planList == null)
+            return 0;
         return planList.size();
     }
 
@@ -40,8 +47,8 @@ public class PlanAdapter extends BaseAdapter {
         TextView title=(TextView) v.findViewById(R.id.title);
         TextView content=(TextView) v.findViewById(R.id.description);
 
-        title.setText(planList.get(position).getTitle());
-        content.setText(planList.get(position).getContent());
+        title.setText(planList.get(position).getName());
+        content.setText(planList.get(position).getMemo());
 
         return v;
     }

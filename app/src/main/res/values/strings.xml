@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MoneyPlanner</string>
+    <string name="pref_key">CECOM_MONEYPLANNER_KEY</string>
+    <string name="user_key">CECOM_MONEYPLANNER_USER_KEY</string>
+    <string name="title_activity_user_set_up">User Initialization</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
 </resources>
